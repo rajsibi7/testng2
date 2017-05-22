@@ -1,0 +1,42 @@
+<h1>drag and drop..</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="round-boxes">
+        <nav class="circular-menu">
+          <div class="circle">
+              <div class="card card-outline-primary mb-3" droppable [dragOverClass]="'drag-target-border'" [dragHintClass]="'drag-hint'"
+                   (onDrop)="dropOnBall($event,arrindex )" *ngFor="let processObj of allProcessStepsArray; let arrindex = index" [draggable] [dragClass]="'active'" [dragData]="processObj"
+              (onDragStart)="startDragFromBall($event,arrindex)" (onDragEnd)="endDragFromBall($event,arrindex)">
+
+                <i [ngClass]="setIcon('Finding Us')"></i>
+                <span><strong>{{arrindex}} {{processObj[this.dynamicArrName + arrindex]?.processStepName}}</strong></span>
+              </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card card-outline-success mb-3">
+        <div class="card-header card-inverse card-success">
+          Draggable Items
+        </div>
+        <div class="card-block scroll-list">
+          <div class="list-group">
+            <li class="list-group-item list-group-item-action list-group-item-success" [draggable] *ngFor="let item of fakeobj;let i = index;"
+                [dragClass]="'active'" [dragData]="item" droppable [dragOverClass]="'drag-target-border'" [dragHintClass]="'drag-hint'"
+                (onDrop)="onreverseDrop($event)" (onDragStart)="startDragFromList($event,i)">
+             {{i+1}}. {{item.processStepName}}
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+

@@ -1,0 +1,298 @@
+.circular-menu {
+  height: 336px;
+  width: 336px;
+  position: relative;
+  border-radius: 50%;
+  margin-left: 35px;
+}
+
+.circle {
+  height: 345px;
+  margin-left: 23px;
+  width: 335px;
+  opacity: 1;
+  border: 2px dotted #000000;
+  border-radius: 50%;
+  margin-top: 14PX;
+  .card{
+    border: 2px solid #c3c3c3;
+    background-color: #efefef;
+    padding: 14px;
+    vertical-align: middle;
+    border-radius: 50%;
+    height: 67px;
+    width: 67px;
+    cursor: pointer;
+    //margin: 20px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    position: absolute;
+    text-decoration: none;
+    display: block;
+    margin-top: -22px;
+    margin-left: -11px;
+    text-align: center;
+    &.active{
+      border: 2px solid rgba(22, 169, 226, 0.9);
+      background-color: #8ad4f0;
+      i {
+        color:#ffffff !important;
+      }
+      span{
+        color: #5E6470 !important;
+      }
+    }
+    i {
+      font-size: 30px;
+      color:#c3c3c3;
+      &.icon-registration
+      {
+        font-size:27px;
+      }
+    }
+    span{
+      position: relative;
+      top: 20px;
+      color: #c3c3c3;
+      font-weight: 600;
+    }
+  }
+}
+
+
+.circle-menu
+{
+  
+  padding: 15px 50px;
+  ul
+  {
+    
+    border: 2px dotted #6b6b6b;
+    position: relative;
+    border-radius: 50%;
+    height: 336px;
+    width: 336px;
+    li
+    {
+      float: left;
+      text-align: center;
+      a
+      {
+        border: 2px solid rgba(22, 169, 226, 0.9);
+        background-color: #8ad4f0;
+        display: inline-block;
+        padding: 14px;
+        vertical-align: middle;
+        border: 2px solid;
+        border-radius: 50%;
+        height: 67px;
+        width: 67px;
+        cursor: pointer;
+        margin: 20px;
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        position: absolute;
+        .icon-caret-right
+        {
+          position: absolute;
+          
+          color: #6b6b6b !important;
+          
+          font-size: 18px;
+        }
+        
+        
+        
+        i
+        {
+          font-size: 30px;
+          color:#ffffff;
+          &.icon-registration
+          {
+            font-size:27px;
+          }
+          
+        }
+        &:hover
+        {
+          border: 2px solid #c3c3c3;
+          background-color: #efefef;
+          
+          i{
+            color:#c3c3c3;
+          }
+        }
+        
+        
+        &.find-us
+        {
+          left: 0px;
+          top: -8px;
+          
+          .icon-caret-right
+          {
+            left: 74px;
+            position: absolute;
+            right: 0;
+            top: -11px;
+            transform: rotate(-11deg);
+            
+          }
+        }
+        &.show-room
+        {
+          left: 85px;
+          top: -50px;
+          .icon-caret-right
+          {
+            left: 89px;
+            position: absolute;
+            right: 0;
+            top: 20px;
+            -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+          }
+        }
+        &.test-drive
+        {
+          left: 185px;
+          top: -40px;
+          .icon-caret-right
+          {
+            left: 73px;
+            position: absolute;
+            right: 0;
+            top: 51px;
+            -webkit-transform: rotate(50deg);
+            transform: rotate(50deg);
+          }
+        }
+        &.sales-staff
+        {
+          left: 250px;
+          top: 25px;
+          .icon-caret-right
+          {
+            left: 51px;
+            position: absolute;
+            top: 69px;
+            -webkit-transform: rotate(72deg);
+            transform: rotate(72deg);
+          }
+        }
+        &.circle-product
+        {
+          left: 275px;
+          top: 110px;
+          .icon-caret-right
+          {
+            left: -8px;
+            position: absolute;
+            right: 0;
+            top: 79px;
+            -webkit-transform: rotate(109deg);
+            transform: rotate(109deg);
+          }
+          
+        }
+        &.circle-finance
+        {
+          left: 250px;
+          top: 200px;
+          .icon-caret-right
+          {
+            left: -70px;
+            position: absolute;
+            right: 0;
+            top: 67px;
+            -webkit-transform: rotate(148deg);
+            transform: rotate(148deg);
+          }
+        }
+        &.circle-insurance
+        {
+          left: 90px;
+          top: 270px;
+          .icon-caret-right
+          {
+            left: -113px;
+            position: absolute;
+            right: 0;
+            top: 13px;
+            -webkit-transform: rotate(205deg);
+            transform: rotate(205deg);
+          }
+        }
+        &.cirlce-registration
+        {
+          left: 180px;
+          top: 255px;
+          .icon-caret-right
+          {
+            left: -103px;
+            position: absolute;
+            right: 0;
+            top: 47px;
+            -webkit-transform: rotate(184deg);
+            transform: rotate(184deg);
+          }
+        }
+        &.circle-delivery
+        {
+          left: 5px;
+          top: 235px;
+          .icon-caret-right
+          {
+            left: -75px;
+            position: absolute;
+            right: 0;
+            top: -17px;
+            -webkit-transform: rotate(233deg);
+            transform: rotate(233deg);
+          }
+        }
+        &.cirlce-overall-exp
+        {
+          left: -45PX;
+          top: 160PX;
+          .icon-caret-right
+          {
+            left: 74px;
+            position: absolute;
+            right: 0;
+            top: -11px;
+            transform: rotate(-11deg);
+          }
+        }
+      }
+    }
+  }
+  .disbale_class {
+    color: gray;
+    cursor: not-allowed;
+    text-decoration: none;
+    
+  }
+}
+
+
+div.scroll-list {
+  overflow: auto;
+  max-height: 70vh;
+}
+
+.drag-over {
+  border: #ff525b dashed 2px;
+}
+
+.drag-hint {
+  border: #ffc100 dashed 2px;
+}
+
+.drag-target-border {
+  border: #00bfff dashed 2px;
+}
+
+.drag-target-border-green {
+  border: #3c763d dashed 2px;
+}
